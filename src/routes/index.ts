@@ -8,7 +8,7 @@ import {
 } from "../controllers/index.controller";
 
 router.get("/grupos", getGrupos);
-router.get("/grupos/:id", getGrupoById);
+router.get("/grupos/:id/details", getGrupoById);
 router.post("/createGrupo", createGrupo);
 
 export default router;
