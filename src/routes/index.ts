@@ -5,10 +5,10 @@ import {
   getGrupos,
   getGrupoById,
   createGrupo,
-} from "../controllers/index.controller";
+} from "../Controllers/index.controller";
 
 router.get("/grupos", getGrupos);
-router.get("/grupos/:id/details", getGrupoById);
+router.get("/grupos/:id", getGrupoById);
 router.post("/createGrupo", createGrupo);
 
 export default router;

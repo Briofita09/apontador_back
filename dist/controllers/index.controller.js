@@ -50,8 +50,9 @@ const createGrupo = (req, res) => __awaiter(void 0, void 0, void 0, function* ()
         });
     }
     catch (err) {
-        console.log(err);
-        return res.status(500).json("Erro interno do servidor");
+        return res
+            .status(400)
+            .json({ message: "O nome contem mais de 40 caracteres!" });
     }
 });
 exports.createGrupo = createGrupo;

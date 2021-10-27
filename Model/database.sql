@@ -2,11 +2,11 @@ CREATE DATABASE apontador;
 
 CREATE TABLE grupos (
     id SERIAL PRIMARY KEY,
-    name VARCHAR(40),
+    name VARCHAR(40) NOT NULL,
     description TEXT,
-    link TEXT,
-    lat NUMERIC,
-    lng NUMERIC
+    link TEXT NOT NULL,
+    lat NUMERIC NOT NULL,
+    lng NUMERIC NOT NULL
 );
 
 INSERT INTO grupos (name, description, link, lat, lng)

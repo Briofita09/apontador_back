@@ -54,7 +54,8 @@ export const createGrupo = async (
       },
     });
   } catch (err) {
-    console.log(err);
-    return res.status(500).json("Erro interno do servidor");
+    return res
+      .status(400)
+      .json({ message: "O nome contem mais de 40 caracteres!" });
   }
 };
